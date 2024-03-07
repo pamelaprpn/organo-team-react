@@ -1,0 +1,29 @@
+
+.campo{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 0 2em;
+}
+
+.campo-texto{
+    font-weight: 600;
+    font-size: 18px;
+    font-family: var(--font-montserrat);
+}
+
+.campo-input{
+    background-color: var(--cor-branca);
+    border: none;
+    box-shadow: 8px 8px 16px  rgba(0, 0, 0, 0.3);
+    padding: 2em .5em;
+    width: 100%;
+    border-radius: .5em;
+
+}
+
+.campo-input::placeholder{
+    font-size: 400;
+    font-size: 16px; 
+    font-family: var(--font-montserrat);  
+}

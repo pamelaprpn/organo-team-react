@@ -1,0 +1,26 @@
+.form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3em 0;
+
+    
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2em;
+    max-width: 80%;
+    background-color: var(--cor-principal-cinza);
+    box-shadow: 8px 8px 16px  rgba(0, 0, 0, 0.3);
+    padding: 2em 4em;
+    border-radius: .5em;
+   
+}
+
+.form__titulo{
+    font-weight: 400;
+    font-size: 32px;
+}

@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Prata&display=swap');
+
+
+:root{
+    --cor-principal-azul: #6278F7;
+    --cor-principal-cinza: #F2F2F2;
+    --cor-principal-azul: #6278F7;
+    --cor-branca: white;
+
+    --font-prata : "Prata", serif; 
+    --font-montserrat: "Montserrat", sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font-prata);
+}
