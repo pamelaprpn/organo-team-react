@@ -1,11 +1,11 @@
-@import url(./styles.css);
 
 .banner{  
     text-align: center;
-    background-color: var(--cor-principal-azul);
+    background-color: #6278F7;
     
 }
 
 .banner-img{
     max-width: 100%;
+
 }

@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Prata&display=swap');
+
+*{
+    font-family: "Montserrat", sans-serif;;
+}
+
 .form-container{
     display: flex;
     justify-content: center;
@@ -13,7 +19,7 @@
     justify-content: center;
     gap: 2em;
     max-width: 80%;
-    background-color: var(--cor-principal-cinza);
+    background-color: #F2F2F2;
     box-shadow: 8px 8px 16px  rgba(0, 0, 0, 0.3);
     padding: 2em 4em;
     border-radius: .5em;
