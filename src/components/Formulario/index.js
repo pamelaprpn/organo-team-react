@@ -44,7 +44,7 @@ const Formulario = (props) => {
     return( 
         <section className="form-container">
             <form className="formulario" onSubmit={salvar}>
-                <h2 className="form__titulo">Preencha os dados para criar o card de Aluno.</h2>
+                <h2 className="form__titulo">Preencha os dados para criar conexão com outros alunos da Alura</h2>
                 <CampoText 
                     required={true} 
                     label='Nome'
