@@ -9,15 +9,7 @@ import { useState } from 'react';
 
 const Formulario = (props) => {
     
-    const trilhas = [
-        'Dados',
-        'DevOps',
-        'Desenvolvimento Full Stack',
-        'Desenvolvimento Mobile',
-        'Segurança da Informação',
-        'Marketing Digital',
-        'User Experience'
-    ]
+    
 
     const [nome, setNome] = useState('')
     const [cargo, setCargo] = useState('')
@@ -36,8 +28,13 @@ const Formulario = (props) => {
                 github,
                 image,
                 trilha
-            }
-        )
+            })
+            setNome('')
+            setCargo('')
+            setLinkedin('')
+            setGithub('')
+            setImage('')
+            setTrilha('')
     }
 
     
@@ -79,7 +76,7 @@ const Formulario = (props) => {
                     isDisabled={isDisabled} 
                     required={true} 
                     label="Trilhas" 
-                    itens={trilhas} 
+                    itens={props.Ntrilhas} 
                     valor={trilha}
                     changed={valor => setTrilha(valor)}/> 
                 <Botao>Criar Card</Botao>   

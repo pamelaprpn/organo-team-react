@@ -1,7 +1,15 @@
+
 .trilhas{
     text-align: center;
     padding: 32px;
     
+}
+
+.alunos{
+    display: flex;
+    justify-content: space-around;
+    margin: 32px;
+    flex-wrap: wrap;
 }
 
 .trilhas h3{

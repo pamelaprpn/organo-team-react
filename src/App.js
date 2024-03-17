@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Banner from "./components/Banner";
 import Formulario from "./components/Formulario";
-import Trilhas from "./Trilhas";
+import Trilhas from "./components/Trilhas";
 
 
 
@@ -49,17 +49,20 @@ function App() {
   const [alunos, setAlunos] = useState([])
 
   const newAluno = (aluno) => {
-    console.log(aluno)
     setAlunos([...alunos, aluno])
   }
 
   return (
     <>
       <Banner/>
-      <Formulario alunoCadastrado = {aluno => newAluno(aluno)}/> 
-      {trilhas.map(trilha => <Trilhas key={trilha.nome} nome={trilha.nome} corPrimaria={trilha.corPrimaria} corSecundaria={trilha.corSecundaria}/>)}
-      
-      
+      <Formulario Ntrilhas={trilhas.map(trilha => trilha.nome)} alunoCadastrado = {aluno => newAluno(aluno)}/> 
+      {trilhas.map(trilha => <Trilhas 
+      key={trilha.nome} 
+      nome={trilha.nome} 
+      corPrimaria={trilha.corPrimaria} 
+      corSecundaria={trilha.corSecundaria}
+      alunos={alunos.filter(aluno => aluno.trilha === trilha.nome)}/>)}
+       
     </>
   );
 }

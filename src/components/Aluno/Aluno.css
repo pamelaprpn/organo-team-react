@@ -1,0 +1,45 @@
+.card{
+    width: 280px;
+}
+
+.card_img{
+    background-color:  #F0F0F0;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.card_img img{
+    width: 100px;
+    border-radius: 50%;
+    position: relative;
+    bottom: -50px;    
+}
+
+.card_info{
+    background: #FFFFFF;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.08); 
+    padding-top: 3em;
+    padding-bottom: .5em;
+}
+
+.card_contato{
+    background-color: white;
+    text-decoration: none;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.08);
+    border-radius: 0px 0px 10px 10px;
+    padding-top: .5em;
+    padding-bottom: 1em;
+}
+
+.card_contato ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.lista{
+    list-style: none; 
+ 
+}
+
+
